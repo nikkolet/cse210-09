@@ -23,17 +23,23 @@ cse210-09                   (project root folder)
     +-- constants.cpython-310.pyc
     
   +-- game
+  
     +-- casting
+    
       +-- .DS_Store
       +-- actor.py
       +-- cast.py
       +-- food.py
       +-- score.py
       +-- snake.py
+      
     +-- directing
+    
       +-- .DS_Store
       +-- director.py 
+      
     +-- scripting
+    
       +-- .DS_Store
       +-- action.py
       +-- control_actors_action.py
@@ -41,15 +47,21 @@ cse210-09                   (project root folder)
       +-- handle_collisions_action.py
       +-- move_actors_action.py
       +-- script.py
+      
     +-- services
+    
       +-- .DS_Store
       +-- keyboard_service.py
       +-- video_service.py
+      
     +-- shared
+    
       +-- .DS_Store
       +-- color.py
       +-- point.py
+      
     +-- .DS_Store
+    
   +-- .DA_Store
   +-- _main.py              (Program Entry Point)
   +-- constants.py
