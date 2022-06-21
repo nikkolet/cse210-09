@@ -13,12 +13,41 @@ The project files and folders are organized as follows:
 
 cse210-09                   (project root folder)
 +-- snake                  (source code for game)
-  +-- game                  (specific classes)
-    +-- directory.py        (Directs the game)
-    +-- man.py              (Handles the man in the parachute)
-    +-- puzzle.py           (Stores word array and chooses random word as Puzzle)
-    +-- terminal_service.py (Handles all terminal operations)
-  +-- __main__.py           (program entry point)
+  +-- _pycache                  (Complier Data)
+    +-- _main_.cpython-310.pyc
+    +-- constants.cpython-310.pyc
+  +-- game
+    +-- casting
+      +-- .DS_Store
+      +-- actor.py
+      +-- cast.py
+      +-- food.py
+      +-- score.py
+      +-- snake.py
+    +-- directing
+      +-- .DS_Store
+      +-- director.py 
+    +-- scripting
+      +-- .DS_Store
+      +-- action.py
+      +-- control_actors_action.py
+      +-- draw_actors_action.py
+      +-- handle_collisions_action.py
+      +-- move_actors_action.py
+      +-- script.py
+    +-- services
+      +-- .DS_Store
+      +-- keyboard_service.py
+      +-- video_service.py
+    +-- shared
+      +-- .DS_Store
+      +-- color.py
+      +-- point.py
+    +-- .DS_Store
+  +-- .DA_Store
+  +-- _main.py              (Program Entry Point)
+  +-- constants.py
+
 +-- README.md               (general info)
 
 **Required Technologies**
