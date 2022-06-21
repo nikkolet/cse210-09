@@ -14,10 +14,14 @@ Project Structure
 The project files and folders are organized as follows:
 
 cse210-09                   (project root folder)
+
 +-- snake                  (source code for game)
+
   +-- _pycache                  (Complier Data)
+  
     +-- _main_.cpython-310.pyc
     +-- constants.cpython-310.pyc
+    
   +-- game
     +-- casting
       +-- .DS_Store
