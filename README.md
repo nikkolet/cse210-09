@@ -20,8 +20,10 @@ cse210-09                   (project root folder)
     +-- terminal_service.py (Handles all terminal operations)
   +-- __main__.py           (program entry point)
 +-- README.md               (general info)
+
 Required Technologies
 Python 3.8.0
+
 Authors
 Nikkolet Ashby (ash22001@byui.edu)
 William Cameron (wecameron93@gmail.com)
