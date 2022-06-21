@@ -63,7 +63,9 @@ cse210-09                   (project root folder)
     +-- .DS_Store
     
   +-- .DA_Store
+  
   +-- _main.py              (Program Entry Point)
+  
   +-- constants.py
 
 +-- README.md               (general info)
