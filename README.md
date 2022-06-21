@@ -1,5 +1,7 @@
 # cse210-09
+
 **Snake Game**
+
 Channel your inner Jungle Book! Snake is the game where you slither your way to victory! The rules are simple. You, the player, play against another player and eat more food than your opponent to get more points! Don't go near your opponent however or its game over!
 
 Getting Started
@@ -51,9 +53,11 @@ cse210-09                   (project root folder)
 +-- README.md               (general info)
 
 **Required Technologies**
+
 Python 3.8.0
 
 **Authors**
+
 Nikkolet Ashby (ash22001@byui.edu)
 William Cameron (wecameron93@gmail.com)
 Ramón Felipe Castano Salgado (monchouam@gmail.com)
