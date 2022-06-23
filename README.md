@@ -32,6 +32,7 @@ cse210-09                   (project root folder)
       +-- food.py
       +-- score.py
       +-- snake.py
+      +-- snake2.py
       
     +-- directing
     

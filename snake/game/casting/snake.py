@@ -52,12 +52,18 @@ class Snake(Actor):
         self._segments[0].set_velocity(velocity)
     
     def _prepare_body(self):
-        x = int(constants.MAX_X / 2)
-        y = int(constants.MAX_Y / 2)
+        # x = int(constants.MAX_X / 2)
+        # y = int(constants.MAX_Y / 2)
+        #this is the starting position
+        body = constants.SNAKE_LENGTH
+        x = int(constants.MAX_X/2)
+        y = int(constants.MAX_Y/2) 
+        print('this is the x in snake',x)
+        print('this is the y in snake',y)
 
         for i in range(constants.SNAKE_LENGTH):
             position = Point(x - i * constants.CELL_SIZE, y)
-            velocity = Point(1 * constants.CELL_SIZE, 0)
+            velocity = Point(constants.CELL_SIZE, 0)
             text = "8" if i == 0 else "#"
             color = constants.YELLOW if i == 0 else constants.GREEN
             
