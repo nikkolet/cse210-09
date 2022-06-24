@@ -48,7 +48,7 @@ class StartGameAction(Action):
         y = int(constants.MAX_Y / 2)
         position = Point(x, y)
         
-        self.start_game.set_text("Press spacebar to start the game!\n player 1 is on the right controls: J,I,K,L\nplayer 1 is on the left controls: A,W,S,D")
+        self.start_game.set_text("Press spacebar to start the game!\n player 1 is on the right controls: J,I,K,L\nplayer 2 is on the left controls: A,W,S,D")
         self.start_game.set_position(position)
         self.start_game.set_font_size(30)
         cast.add_actor("messages", self.start_game)
