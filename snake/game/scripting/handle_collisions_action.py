@@ -40,8 +40,8 @@ class HandleCollisionsAction(Action):
         #score = cast.get_first_actor("scores")
         #food = cast.get_first_actor("foods")
         
-        snake1 = cast.get_first_actor("snakes1")
-        snake2 = cast.get_first_actor("snakes2")
+        snake1 = cast.get_first_actor("snake1")
+        snake2 = cast.get_first_actor("snake2")
         
         
         points = 0
@@ -73,8 +73,8 @@ class HandleCollisionsAction(Action):
         Args:
             cast (Cast): The cast of Actors in the game.
         """
-        snake1 = cast.get_first_actor("snakes1")
-        snake2 = cast.get_first_actor('snakes2')
+        snake1 = cast.get_first_actor("snake1")
+        snake2 = cast.get_first_actor('snake2')
         head1 = snake1.get_segments()[0]
         head2 = snake2.get_segments()[0]
         segments1 = snake1.get_segments()[1:]
@@ -136,8 +136,8 @@ class HandleCollisionsAction(Action):
         """
         
         if self._is_game_over:
-            snake1 = cast.get_first_actor("snakes1")
-            snake2 = cast.get_first_actor('snakes2')
+            snake1 = cast.get_first_actor("snake1")
+            snake2 = cast.get_first_actor('snake2')
             segments1 = snake1.get_segments()
             segments2 = snake2.get_segments()
             #food = cast.get_first_actor("foods")
