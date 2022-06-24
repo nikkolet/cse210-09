@@ -18,7 +18,7 @@ from game.services.keyboard_service import KeyboardService
 from game.services.video_service import VideoService
 from game.shared.color import Color
 from game.shared.point import Point
-
+from game.scripting.start_game import StartGameAction
 
 def main():
     
@@ -35,11 +35,14 @@ def main():
     video_service = VideoService()
 
     script = Script()
+    start_game_screen = StartGameAction(keyboard_service)
     script.add_action("input", ControlActorsAction(keyboard_service))
     script.add_action("update", MoveActorsAction())
     script.add_action("update", HandleCollisionsAction())
     script.add_action("output", DrawActorsAction(video_service))
-    director = Director(video_service)
+
+
+    director = Director(video_service,start_game_screen)
     director.start_game(cast, script)
 
 
