@@ -108,6 +108,10 @@ class Actor:
             text (string): The given value.
         """
         self._text = text
+        
+    def set_img(self, img):
+        
+        self._img = img
 
     def set_velocity(self, velocity):
         """Updates the velocity to the given one.
