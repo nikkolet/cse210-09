@@ -45,12 +45,16 @@ class StartGameAction(Action):
         #food = cast.get_first_actor("foods")
 
         x = int(constants.MAX_X / 2)
-        y = int(constants.MAX_Y / 2)
+        y = int((constants.MAX_Y / 2) - (((constants.FONT_SIZE * 2))*3/2))
         position = Point(x, y)
+
+        text = "Press spacebar to start the game!"
+        player1 = "Player 1 is on the right controls: J,I,K,L." 
+        player2 = "Player 2 is on the left controls: A,W,S,D"
         
-        self.start_game.set_text("Press spacebar to start the game!\n player 1 is on the right controls: J,I,K,L\nplayer 2 is on the left controls: A,W,S,D")
+        self.start_game.set_text(f"{text : ^15}\n{player1 : ^15}\n{player2 : ^15}")
         self.start_game.set_position(position)
-        self.start_game.set_font_size(30)
+        self.start_game.set_font_size(constants.FONT_SIZE * 2)
         cast.add_actor("messages", self.start_game)
 
         """
