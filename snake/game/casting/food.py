@@ -2,6 +2,8 @@ import random
 import constants
 from game.casting.actor import Actor
 from game.shared.point import Point
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 
 
 class Food(Actor):
@@ -18,9 +20,12 @@ class Food(Actor):
         super().__init__()
         self._points = 0
         self._font_size = 30
-        self.set_text("@")
+        img = mpimg.imread('snake/game/casting/images/apple.png')
+        imgplot = plt.imshow(img)
+        self.set_img(imgplot)
         self.set_color(constants.RED)
         self.reset()
+
         
     def reset(self):
         """Selects a random position and points that the food is worth."""
