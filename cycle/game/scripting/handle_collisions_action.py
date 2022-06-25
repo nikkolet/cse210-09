@@ -105,6 +105,7 @@ class HandleCollisionsAction(Action):
             print('head on collision')
             self._fault = 'draw'
             self._is_game_over = True
+        
             
         for segment1 in segments1:
            #print('this is seg in con 1',segment)
