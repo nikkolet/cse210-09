@@ -3,11 +3,11 @@ from game.casting.actor import Actor
 from game.shared.point import Point
 
 
-class Snake(Actor):
+class Rider(Actor):
     """
-    A long limbless reptile.
+    A rider that leaves a tail behind everywhere the rider goes.
     
-    The responsibility of Snake is to move itself.
+    The responsibility of rider is to move itself.
 
     Attributes:
         _points (int): The number of points the food is worth.
@@ -55,13 +55,13 @@ class Snake(Actor):
         # x = int(constants.MAX_X / 2)
         # y = int(constants.MAX_Y / 2)
         #this is the starting position
-        body = constants.SNAKE_LENGTH
+        body = constants.RIDER_LENGTH
         x = int(constants.MAX_X/2)
         y = int(constants.MAX_Y/2) 
-        print('this is the x in snake',x)
-        print('this is the y in snake',y)
+        print('this is the x in rider',x)
+        print('this is the y in rider',y)
 
-        for i in range(constants.SNAKE_LENGTH):
+        for i in range(constants.RIDER_LENGTH):
             position = Point(x - i * constants.CELL_SIZE, y)
             velocity = Point(constants.CELL_SIZE, 0)
             text = "8" if i == 0 else "#"

@@ -1,9 +1,18 @@
 import constants
 from game.casting.actor import Actor
 from game.shared.point import Point
-from game.casting.snake import Snake
+from game.casting.rider import Rider
 
-class Snake2(Snake):
+class Rider2(Rider):
+    '''
+    A rider that leaves a tail behind everywhere the rider goes.
+    
+    The responsibility of rider is to move itself.
+
+    Attributes:
+        _points (int): The number of points the food is worth.
+    
+    '''
 
 
     def same_thing (self):
@@ -37,7 +46,7 @@ class Snake2(Snake):
             segment.set_position(position)
             segment.set_velocity(velocity)
             segment.set_text("O")
-            segment.set_color(constants.GREEN)
+            segment.set_color(constants.RED)
             self._segments.append(segment)
             
             
@@ -60,19 +69,19 @@ class Snake2(Snake):
     
     def _prepare_body(self):
         #this is the starting position coordinates x then y
-        body = constants.SNAKE_LENGTH
+        body = constants.RIDER_LENGTH
         x = int(constants.MAX_X/-2) #* -1)
         y = int(constants.MAX_Y/-2) #* -1)
         
-        print('this is the x in snake2',x)
-        print('this is the y in snake2',y)
+        print('this is the x in rider2',x)
+        print('this is the y in rider2',y)
         
         
-        #this will go through the entire length of the snake to start.
-        for i in range(constants.SNAKE_LENGTH):
+        #this will go through the entire length of the rider to start.
+        for i in range(constants.RIDER_LENGTH):
             position = Point(x + i * constants.CELL_SIZE, y)
             velocity = Point(-1*constants.CELL_SIZE,0) #original has 1 and 0
-            print(position,velocity,' here is the position and velocity numbers for snake 2')
+            print(position,velocity,' here is the position and velocity numbers for rider 2')
             text = "O" if i != 0 else "-"
             print(text)
             color = constants.YELLOW if i == 0 else constants.GREEN

@@ -1,21 +1,21 @@
 # cse210-09
 
-**Snake Game**
+**Cycle Game**
 
-Channel your inner Jungle Book! Snake is the game where you slither your way to victory! The rules are simple. You, the player, play against another player and eat more food than your opponent to get more points! Don't go near your opponent however or its game over!
+Welcome to the Cycle game!  The game is very simple.  There are 2 players who will try to trap each other while not getting trapped or trapping theirselves.  The player that runs into a tail, whether their own or the opposing player, loses.  Think quick, be smart and don't get trapped and run into a wall.
 
 Getting Started
 Make sure you have Python 3.8.0 or newer installed and running on your machine. Open a terminal and browse to the project's root folder. Start the program by running the following command.
 
-cse210-09/snake/__main__.py
-You can also run the program from an IDE like Visual Studio Code. Start your IDE and open the project folder. Select the main.py file inside the cse210-09/snake folder and click the "run" icon.
+cse210-09/cycle/__main__.py
+You can also run the program from an IDE like Visual Studio Code. Start your IDE and open the project folder. Select the main.py file inside the cse210-09/rider folder and click the "run" icon.
 
 Project Structure
 The project files and folders are organized as follows:
 
 cse210-09                   (project root folder)
 
-+-- snake                  (source code for game)
++-- cycle                  (source code for game)
 
   +-- _pycache                  (Complier Data)
   
@@ -30,9 +30,10 @@ cse210-09                   (project root folder)
       +-- actor.py
       +-- cast.py
       +-- food.py
+      +-- rider.py
+      +-- rider2.py
       +-- score.py
-      +-- snake.py
-      +-- snake2.py
+      
       
     +-- directing
     
