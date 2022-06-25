@@ -1,9 +1,9 @@
 import random
+
+from matplotlib import colors
 import constants
 from game.casting.actor import Actor
 from game.shared.point import Point
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 
 
 class Food(Actor):
@@ -18,12 +18,16 @@ class Food(Actor):
     def __init__(self):
         "Constructs a new Food."
         super().__init__()
-        self._points = 0
-        self.set_text("@")
-        self.set_color(constants.RED)
+        self._points = 5
+        APPLE = "@"
+        ORANGE = "O"
+        BANANA = "L"
+        Fruits = [APPLE, ORANGE, BANANA]
+        Fruit = random.choice(Fruits)
+        self.set_text(Fruit)
+        self.set_color(constants.Color)
         self.reset()
         self._font_size = 30
-
 
         
     def reset(self):
