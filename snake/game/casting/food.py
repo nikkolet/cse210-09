@@ -22,7 +22,8 @@ class Food(Actor):
         APPLE = "@"
         ORANGE = "O"
         BANANA = "L"
-        Fruits = [APPLE, ORANGE, BANANA]
+        BLUEBERRY = "*"
+        Fruits = [APPLE, ORANGE, BANANA, BLUEBERRY]
         Fruit = random.choice(Fruits)
         self.set_text(Fruit)
         self.set_color(constants.Color)
