@@ -19,12 +19,11 @@ class Food(Actor):
         "Constructs a new Food."
         super().__init__()
         self._points = 0
-        self._font_size = 30
-        img = mpimg.imread('snake/game/casting/images/apple.png')
-        imgplot = plt.imshow(img)
-        self.set_img(imgplot)
+        self.set_text("@")
         self.set_color(constants.RED)
         self.reset()
+        self._font_size = 30
+
 
         
     def reset(self):
