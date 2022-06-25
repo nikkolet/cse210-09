@@ -40,8 +40,8 @@ class StartGameAction(Action):
             cast (Cast): The cast of Actors in the game.
         """
     
-        #snake = cast.get_first_actor("snakes")
-        #segments = snake.get_segments()
+        #rider = cast.get_first_actor("rider")
+        #segments = rider.get_segments()
         #food = cast.get_first_actor("foods")
 
         x = int(constants.MAX_X / 2)
