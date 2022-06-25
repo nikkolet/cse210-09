@@ -32,15 +32,28 @@ class ControlActorsAction(Action):
             cast (Cast): The cast of Actors in the game.
             script (Script): The script of Actions in the game.
         """
+        snake1 = cast.get_first_actor("snake1")
+        current_direction1 = snake1.get_head().get_velocity()
+        print(f"direction1:  ({current_direction1.get_x()}, {current_direction1.get_y()})")
+
+        snake2 = cast.get_first_actor("snake2")
+        current_direction2 = snake1.get_head().get_velocity()
+        print(f"direction2:  ({current_direction2.get_x()}, {current_direction2.get_y()})")
+
+      
+
         #p1 controls
         # left
-        if self._keyboard_service.is_key_down('j'):
+        if self._keyboard_service.is_key_down('j'):           
             self._direction1 = Point(-constants.CELL_SIZE, 0)
+            
+               
         
         # right
-        if self._keyboard_service.is_key_down('l'):
+        if self._keyboard_service.is_key_down('l'):            
             self._direction1 = Point(constants.CELL_SIZE, 0)
-        
+           
+                    
         # up
         if self._keyboard_service.is_key_down('i'):
             self._direction1 = Point(0, -constants.CELL_SIZE)
@@ -66,9 +79,21 @@ class ControlActorsAction(Action):
         if self._keyboard_service.is_key_down('s'):
             self._direction2 = Point(0, constants.CELL_SIZE)
         
+        print(f"direction1 pressed:  ({self._direction1.get_x()}, {self._direction1.get_y()})")
+        print(f"direction2 pressed:  ({self._direction2.get_x()}, {self._direction2.get_y()})")
         
-        snake1 = cast.get_first_actor("snake1")
-        snake1.turn_head(self._direction1)
         
-        snake2 = cast.get_first_actor("snake2")
+        
+        if self._direction1.equals(current_direction1):
+                self._direction1 = current_direction1
+        
+
+
+        if self._direction2.equals(current_direction2):
+                self._direction2 = current_direction2
+        
+
+
+
+        snake1.turn_head(self._direction1)       
         snake2.turn_head(self._direction2)
