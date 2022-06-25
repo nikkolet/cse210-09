@@ -1,5 +1,5 @@
 from game.shared.color import Color
-
+import random
 
 COLUMNS = 40
 ROWS = 20
@@ -14,3 +14,8 @@ WHITE = Color(255, 255, 255)
 RED = Color(255, 0, 0)
 YELLOW = Color(255, 255, 0)
 GREEN = Color(0, 255, 0)
+ORANGE = Color(255,165,0)
+AQUA = Color(0, 255, 255)
+Colors = [RED, YELLOW, GREEN, ORANGE, AQUA]
+Color = random.choice(Colors)
+
