@@ -32,12 +32,12 @@ class ControlActorsAction(Action):
             cast (Cast): The cast of Actors in the game.
             script (Script): The script of Actions in the game.
         """
-        snake1 = cast.get_first_actor("snake1")
-        current_direction1 = snake1.get_head().get_velocity()
+        rider1 = cast.get_first_actor("rider1")
+        current_direction1 = rider1.get_head().get_velocity()
         print(f"direction1:  ({current_direction1.get_x()}, {current_direction1.get_y()})")
 
-        snake2 = cast.get_first_actor("snake2")
-        current_direction2 = snake1.get_head().get_velocity()
+        rider2 = cast.get_first_actor("rider2")
+        current_direction2 = rider1.get_head().get_velocity()
         print(f"direction2:  ({current_direction2.get_x()}, {current_direction2.get_y()})")
 
       
